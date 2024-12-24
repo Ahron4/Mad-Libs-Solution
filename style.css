@@ -1,0 +1,40 @@
+h1 
+{
+    display: flex;
+    justify-content: center;
+}
+
+h3 
+{
+    display: flex;
+    justify-content: center;
+}
+
+img 
+{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#dinner 
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 50px;  
+}
+
+#mystery 
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#travel 
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-content: space-around;
+}
