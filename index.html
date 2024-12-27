@@ -6,22 +6,30 @@
     <title>Madlibs</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:#3aafa9;">
+<body style="background-image: url('images/background.jpg');">
     <h1>MadLibs!</h1>
-    <h3>Play an existing story or create your own custom one!</h3>
-    <div id="dinner">
-        <img src="images/dinner.jpg" alt="dinner">
-        <p>You have been invited to the most bizzare dinner party in town filled with unexpected twist, peculiar foods, and outrageous events.</p>
-    </div>
+    <h2>Generate a Funny Story By Choosing One Below</h2>
+    <div class="container">
+        <div class="category">
+            <img src="images/dinner.jpg" alt="dinner">
+            <p>You have been invited to the most bizarre dinner party in town filled with unexpected twists, peculiar foods, and outrageous events.</p>
+            <button onclick="dinner()">Generate Dinner Story!</button>
+        </div>
+    
+        <div class="category">
+            <img src="images/mystery.jpg" alt="mystery">
+            <p>It is the night of the big school dance until... someone spilled the entire punch bowl on the floor! It is now up to the detectives to solve this juicy mystery and figure out who had the motive, the opportunity, and the audacity to ruin the punch before anyone got a taste.</p>
+            <button>Generate Mystery Story!</button>
+        </div>
+    
+        <div class="category">
+            <img src="images/time_travel.jpg" alt="travel">
+            <p>Your malfunctioning time machine has created total chaos in the space-time continuum! Someone has used it to steal your homework before it was even due. It is up to you to travel through time and get it back before the bell rings for class.</p>
+            <button>Generate Time Travel Story!</button>
+        </div>
 
-    <div id="mystery">
-        <img src="images/mystery.jpg" alt="mystery">
-        <p>It is the night of the big school dance until... someone spilled the entire punch bowl on the floor! It is now up to the detectives to solve this juicy mystery and figure out who had the motive, the opportunity, and the audacity to ruin the punch before anyone got a taste.</p>
-    </div>
-
-    <div id="travel">
-        <img src="images/time_travel.jpg" alt="travel">
-        <p>Your malfunctioning time machine has created total chaos in the space-time continuum! Someone has used it to steal your homework before it was even due. It is up to you to travel through time and get it back before the bell rings for class.</p>
+        <h1>Your Generated Story</h1>
+        <div id="output"></div>
     </div>
     <script src="script.js"></script>
 </body>

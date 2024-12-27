@@ -1,40 +1,43 @@
-h1 
-{
+h1 {
     display: flex;
     justify-content: center;
 }
 
-h3 
-{
+h2 {
     display: flex;
     justify-content: center;
 }
 
-img 
-{
-    max-width: 50%;
-    max-height: 50%;
+.container {
+    display: flex; 
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
 }
 
-#dinner 
-{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin: 50px;  
+/* Individual category styling */
+.category {
+    text-align: center; 
+    width: 30%; 
 }
 
-#mystery 
-{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 25px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
-#travel 
-{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    justify-content: space-around;
+p {
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+button {
+    padding: 10px;
+}
+
+#output {
+    text-align: center;
+    font-size: 50px;
 }
