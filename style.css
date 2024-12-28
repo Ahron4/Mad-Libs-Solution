@@ -8,19 +8,6 @@ h2 {
     justify-content: center;
 }
 
-.container {
-    display: flex; 
-    justify-content: center;
-    gap: 30px; 
-    flex-wrap: wrap; 
-}
-
-/* Individual category styling */
-.category {
-    text-align: center; 
-    width: 30%; 
-}
-
 img {
     width: 100%; 
     height: auto; 
@@ -35,6 +22,19 @@ p {
 
 button {
     padding: 10px;
+}
+
+.container {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px; 
+}
+
+/* Individual category styling */
+.category {
+    text-align: center; 
+    width: 30%; 
 }
 
 #output {
