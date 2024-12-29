@@ -11,7 +11,6 @@ function dinner()
 
     if (food && smthStrange && adj && animal && verb && obj && funQuote1 && funQuote2)
     {
-        /* Already implemented, missing text and input */
         document.getElementById("output").innerHTML = `
         <p>The dinner party started with a dish of ${food} that smelled like ${smthStrange}. 
         Suddenly, a ${adj} ${animal} appeared and started ${verb} on the table! 
@@ -19,7 +18,6 @@ function dinner()
         We all laughed and said "${funQuote2}." It was unforgettable!</p>
         `;
     }
-    /* Error message goes here */
     else
     {
         alert("Oops! You missed one or more inputs. Please try again!");
