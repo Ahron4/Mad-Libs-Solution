@@ -77,30 +77,6 @@ Your Generated Story
 
 ### ---- Feel free to change any of the values or add additional styling elements! ----
 
-- Alright now we need to style all elements in the container class.
-```css
-.container {
-    /* Code goes here */
-}
-```
-- Implement the following:
-    - Use flexbox to put everything in the center and make it so that the "Your Generated Story" text is at the bottom instead of the side (HINT: Mess around with the `flex-wrap` and `justify-content` properties).
-    - `gap` of about 30 pixels.
-
-- Style the category class by:
-    - Making the text center using `text-algin`.
-    - Set the `width` to 30%.
-
-- Finally style the output by calling it's id
-```css
-#output {
-    /* Code goes here */
-}
-```
-- Implement the following:
-    - Make the text centered.
-    - Set the `font-size` to 50 pixels.
-
 After all that, your website should look similar to this:
 
 ![demo](demo.jpg)
