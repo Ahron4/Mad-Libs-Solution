@@ -45,7 +45,7 @@ function mystery()
         document.getElementById("output").innerHTML = `
         <p>On a(n) ${adj1} night in the grand ${place}, a loud ${sound} revealed Lord ${silName} lying beside a ${obj}, muttering, "It was the ${noun}!"
         Detective ${name}, questioned the ${jobTitle}, who was caught ${verb} near the scene. But the truth was stranger than fiction.
-        It turns out Lor ${silName} had slipped on ${sub} while trying to steal a plate of ${food}.
+        It turns out Lord ${silName} had slipped on ${sub} while trying to steal a plate of ${food}.
         Everyone laughed, and the detective vowed to investigate only serious cases from now on.</p>
         `;
     }
@@ -73,7 +73,7 @@ function travel()
         <p>Your time machine malfunctions, and a ${histFig} steals your homework escaping to ${place}!
         Armed with a ${obj}, you chase them through time, dodging ${pluNoun} and a ${adj1} dinosaur trying to ${verb} you.
         You finally catch the thief at ${event} and grab your homework just time.
-        Back in class, your teacher, ${silName}, says, "Tha's the most ${adj2} excuse ever!" But hey, you got an A!</p>
+        Back in class, your teacher, ${silName}, says, "That's the most ${adj2} excuse ever!" But hey, you got an A!</p>
         `;
     }
     else

@@ -6,7 +6,7 @@ You might have played it before where it is a word game that consists of a playe
 
 
 ## Part I: HTML
-- In `index.HTML` create a div tag with class container
+- In `index.html` create a div tag with class container.
 - Within that div tag create 3 other div tags with class category. These will represent your 3 different stories.
 - Each of those div tags will have a ``<img>``, ``<p>``, and ``<button>`` tags inside of them.
 
@@ -106,7 +106,7 @@ After all that, your website should look similar to this:
 ![demo](demo.jpg)
 
 ## Part III: JavaScript
-- In the `script.js` you will implement 3 functions that will be added to the onclick event in the `index.HTML` file.
+- In the `script.js` you will implement 3 functions that will be added to the onclick event in the `index.html` file.
 - Create a function named `dinner` with no parameters.
 - Inside the dinner function you will create variables that takes in user input by using the `prompt` method which looks something like this:
 ```js
@@ -146,5 +146,101 @@ else
     // Run this part instead
 }
 ```
+- If your stuck on this here is a hint:
+    - Go to this website --> https://www.geeksforgeeks.org/explain-the-concept-of-truthy-falsy-values-in-javascript/
+    - Scroll down all the way to the header that says "What are Falsy Values".
+    - In summary if the user clicks cancel on the prompt it will generate a `null` value indicating that the variable has not been assigned a value. This would cause a false statement in the if statement.
+    - If the user clicks okay but never inputted anything, it will generate a `""` or an empty string which would also cause a false statement in the if statement.
+    - If this is still too confusing please ask a question :)
+
+- In the if statement copy and paste the following:
+- ```js
+  document.getElementById("output").innerHTML = `
+  <p>The dinner party started with a dish of (FOOD) that smelled like (SOMETHING STRANGE). 
+  Suddenly, a (ADJECTIVE) (ANIMAL) appeared and started (VERB) on the table! 
+  The host grabbed a (OBJECT) and yelled "(FUNNY QUOTE)!" 
+  We all laughed and said "(ANOTHER FUNNY QUOTE)." It was unforgettable!</p>
+  `;
+  ```
+- You don't need to know what everything does but basically it finds the HTML element with an id of output, then the `.innerHTML` replaces the contents inside the element with a new string of HTML.
+
+    - So if my JavaScript was:
+    - ```js
+      document.getElementById("output").innerHTML = `<p> Hello World </p>`;
+      ```
+
+    - The HTML will go from this:
+    - ```html
+      <div id="output"></div>
+      ```
+    - To this:
+    - ```html
+      <div id="output">
+        <p> Hello World </p>
+      </div>
+      ```
+- Remove the parentheses including everything inside the parentheses and replace it with `${yourVariableName}`
+- This will replace the parentheses with the given user input.
+- Do this for all 8 of the other placeholders.
+- In the else statement paste in the following:
+- ```js
+  alert("Oops! You missed one or more inputs. Please try again!");
+  ```
+- This will alert the user if they did not fill out all 8 of the variables.
+
+### Once you got this down, doing the next 2 functions will be fairly easy.
+
+- Create a function named `mystery` with no parameters.
+- Create 11 variables that prompts the users to enter the following (in parentheses) from this story:
+```plaintext
+On a(n) (ADJECTIVE) night in the grand (PLACE), a loud (SOUND) revealed Lord (SILLY NAME 1) lying beside a (OBJECT), muttering, "It was the (NOUN)!"
+Detective (NAME), questioned the (JOB TITLE), who was caught (VERB) near the scene. But the truth was stranger than fiction.
+It turns out Lord (SILLY NAME 1) had slipped on (SUBSTANCE) while trying to steal a plate of (FOOD).
+Everyone laughed, and the detective vowed to investigate only serious cases from now on.
+```
+- Next ensure that the user has inputted something in all of the 11 variables using `if` and `else` statements.
+- In the `if` statement paste in the following and replace the placeholders with your variable names using `${yourVariableName}`.
+- ```js
+   document.getElementById("output").innerHTML = `
+   <p>On a(n) (ADJECTIVE) night in the grand (PLACE), a loud (SOUND) revealed Lord (SILLY NAME 1) lying beside a (OBJECT), muttering, "It was the (NOUN)!"
+   Detective (NAME), questioned the (JOB TITLE), who was caught (VERB) near the scene. But the truth was stranger than fiction. 
+   It turns out Lord (SILLY NAME 1) had slipped on (SUBSTANCE) while trying to steal a plate of (FOOD).
+   Everyone laughed, and the detective vowed to investigate only serious cases from now on.</p>
+   `;
+   ```
+- In the else statement paste in the following:
+- ```js
+  alert("Oops! You missed one or more inputs. Please try again!");
+  ```
+
+## 
+
+- Lastly create a function named `travel` with no parameters.
+- Create 9 variables that prompts the users to enter the following (in parentheses) from this story:
+```plaintext
+Your time machine malfunctions, and a (HISTORICAL FIGURE) steals your homework escaping to (PLACE)!
+Armed with a (OBJECT), you chase them through time, dodging (PLURAL NOUN) and a (ADJECTIVE 1) dinosaur trying to (VERB) you.
+You finally catch the thief at (EVENT IN TIME) and grab your homework just time.
+Back in class, your teacher, (SILLY NAME), says, "That's the most $(ADJECTIVE 2) excuse ever!" But hey, you got an A!
+```
+- Next ensure that the user has inputted something in all of the 9 variables using `if` and `else` statements.
+- In the `if` statement paste in the following and replace the placeholders with your variable names using `${yourVariableName}`.
+- ```js
+  document.getElementById("output").innerHTML = `
+  <p>Your time machine malfunctions, and a (HISTORICAL FIGURE) steals your homework escaping to (PLACE)!
+  Armed with a (OBJECT), you chase them through time, dodging (PLURAL NOUN) and a (ADJECTIVE 1) dinosaur trying to (VERB) you.
+  You finally catch the thief at (EVENT IN TIME) and grab your homework just time.
+  Back in class, your teacher, (SILLY NAME), says, "That's the most $(ADJECTIVE 2) excuse ever!" But hey, you got an A!p>
+  `;
+  ```
+- In the else statement paste in the following:
+- ```js
+  alert("Oops! You missed one or more inputs. Please try again!");
+  ```
+
+## Part IV: Linking
+- Go back to the `index.html` file and call the function `dinner()`, `mystery()`, and `travel()` by putting these functions inside the quotation marks within the `onclick` events.
+- Check that everything works by pressing the buttons, entering user input, leaving inputs blank, etc.
+- Your outputted story with user input will be displayed below at the bottom of the page.
 
         
