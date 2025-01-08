@@ -6,13 +6,70 @@ You might have played it before where it is a word game that consists of a playe
 
 
 ## Part I: HTML
-- In `index.html` create a div tag with class container.
-- Within that div tag create 3 other div tags with class category. These will represent your 3 different stories.
-- Each of those div tags will have a ``<img>``, ``<p>``, and ``<button>`` tags inside of them.
+
+### Step 1
+In `index.html` create a div tag with a class and name it `container`. Here is a reminder of what a div tag with a class looks like:
+```html
+<div class="classNameGoesHere">
+    <!-- Some Code -->
+</div>
+```
+Inside that div tag create 3 other div tags with class category. These will represent your 3 different stories.
+
+> [!NOTE]
+> If you want to know if you're on the right track below is the solution to step 1. These solutions will be at the end of every step to ensure you understand it and your website functions as expected.
+
+<details>
+<summary>Step 1 Solution</summary>
+
+```html
+<!-- Start writing code below -->
+<div class="container">
+    <div class="category">
+        <!-- Implement in Step 2 -->  
+    </div>
+
+    <div class="category">
+        <!-- Implement in Step 2 -->  
+    </div>
+  
+    <div class="category">
+          <!-- Implement in Step 2 -->  
+    </div>
+</div>
+```
+</details>
+
+### Step 2
+Each of those div tags will have a ``<img>``, ``<p>``, and ``<button>`` tags inside of them. Here is a reminder of what these tags look like:
+
+```html  
+<!-- image tag -->
+<img src="sourcePath" alt="">
+
+  <!--
+    - src: the path to the image
+    - alt: alternate text to image (will show text if image cannot be displayed) 
+  -->
+
+<!-- paragraph tag -->
+<p>Text goes here</p>
+
+<!-- button tag -->
+<button onclick="function()">Text goes here</button>
+
+  <!--
+    - onclick: when the user clicks on the button do something
+  -->
+```                                  
 
 - In one of the div tags:
     - Create a ``<img>`` tag and get `dinner.jpg` from the images folder.
-    - (Optional) Set the alt to dinner.
+    - > [!NOTE] 
+      > Remember from week 2 that talks about file paths? Find a file path to go from the images folder then to the `dinner.jpg` image. Once you found the path, put it in `src` of the image tag.
+    - > [!TIP]
+      > You know that you got the correct path when the image is shown on your website.
+    - Set the alt to dinner.
     - Create a ``<p>`` tag and paste in the following:
     ```plaintext
     You have been invited to the most bizarre dinner party in town filled with unexpected twists, peculiar foods, and outrageous events.
@@ -26,10 +83,13 @@ You might have played it before where it is a word game that consists of a playe
     ```html
     <button onclick="">Generate Dinner Story</button>
     ```
+> [!IMPORTANT]
+> If you can understand step 2 then step 2.1 and 2.2 will be easy since it is the basically the same.
 
+### Step 2.1
 - In another div tag:
     - Create an ``<img>`` tag and get the `mystery.jpg` from the images folder.
-    - (Optional) Set the alt to mystery.
+    - Set the alt to mystery.
     - Create a ``<p>`` tag then copy and paste the following:
     ```plaintext
     Enter the world of cobblestone streets, candlelit mansions, and peculiar characters, where a shocking crime shakes Victorian high society. A dashing yet delightfully unconventional detective must piece together the puzzle, navigating a cast of absurd suspects and hilariously bizarre clues.
@@ -38,6 +98,8 @@ You might have played it before where it is a word game that consists of a playe
     ```plaintext
     Generate Mystery Story!
     ```
+
+### Step 2.2
 - In the last div tag:
     - Do the same thing and get the `time_travel.jpg` from the images folder.
     - (Optional) Set the alt to travel.
@@ -53,8 +115,47 @@ You might have played it before where it is a word game that consists of a playe
 ```plaintext
 Your Generated Story
 ```
-- Lastly, outside of the div tag with class container, create a div tag with an id of output. You can leave it blank.
 
+<details>
+<summary> Step 2, 2.1, 2.2 Solution </summary>
+
+```html
+<!-- Start writing code below -->
+<div class="container">
+    <div class="category">
+        <img src="images/dinner.jpg" alt="dinner">
+        <p>You have been invited to the most bizarre dinner party in town filled with unexpected twists, peculiar foods, and outrageous events.</p>
+        <button onclick="">Generate Dinner Story!</button>
+    </div>
+
+    <div class="category">
+        <img src="images/mystery.jpg" alt="mystery">
+        <p>Enter the world of cobblestone streets, candlelit mansions, and peculiar characters, where a shocking crime shakes Victorian high society. A dashing yet delightfully unconventional detective must piece together the puzzle, navigating a cast of absurd suspects and hilariously bizarre clues.</p>
+        <button onclick="">Generate Mystery Story!</button>
+    </div>
+
+    <div class="category">
+        <img src="images/time_travel.jpg" alt="travel">
+        <p>Your malfunctioning time machine has created total chaos in the space-time continuum! Someone has used it to steal your homework before it was even due. It is up to you to travel through time and get it back before the bell rings for class.</p>
+        <button onclick="">Generate Time Travel Story!</button>
+    </div>
+</div>
+```
+
+</details>
+
+### Step 3
+- Lastly, outside of the div tag with class container, create a div tag with an id of output. You can leave it blank for now.
+
+<details>
+<summary>Step 3 Solution</summary>
+
+```html
+<h1>Your Generated Story</h1>
+<div id="output"></div>
+```
+
+</details>
 
 ## Part II: CSS
 - For now your website will look kind of funky with big images and text not aligning properly.
@@ -218,5 +319,3 @@ Back in class, your teacher, (SILLY NAME), says, "That's the most (ADJECTIVE 2) 
 - Go back to the `index.html` file and call the function `dinner()`, `mystery()`, and `travel()` by putting these functions inside the quotation marks within the `onclick` events.
 - Check that everything works by pressing the buttons, entering user input, leaving inputs blank, etc.
 - Your outputted story with user input will be displayed below at the bottom of the page.
-
-        

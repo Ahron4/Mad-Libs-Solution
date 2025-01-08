@@ -1,13 +1,13 @@
 function dinner()
 {
     const food = prompt("Food");
-    const smthStrange = prompt ("Something strange");
+    const smthStrange = prompt ("Something Strange");
     const adj = prompt("Adjective");
     const animal = prompt("Animal");
     const verb = prompt("Verb ending in -ing");
     const obj = prompt("Object");
-    const funQuote1 = prompt("A funny quote");
-    const funQuote2 = prompt("Another funny quote");
+    const funQuote1 = prompt("A Funny Quote");
+    const funQuote2 = prompt("Another Funny Quote");
 
     if (food && smthStrange && adj && animal && verb && obj && funQuote1 && funQuote2)
     {
@@ -30,18 +30,18 @@ function mystery()
     const place = prompt("Place");
     const sound = prompt("Sound");
     const silName = prompt("A Silly Name");
-    const obj = prompt("A object");
-    const noun = prompt("A noun");
-    const name = prompt("A name");
-    const jobTitle = prompt("A job title");
-    const verb = prompt("Verb ending in -ing");
-    const sub = prompt("Substance");
+    const obj = prompt("An Object");
+    const noun = prompt("A Noun");
+    const name = prompt("A Name");
+    const jobTitle = prompt("A Job Title");
+    const verb = prompt("Verb Ending in -ing");
+    const sub = prompt("A Substance");
     const food = prompt("Food");
 
     if (adj && place && sound && silName && obj && noun && name && jobTitle && verb && sub && food)
     {
         document.getElementById("output").innerHTML = `
-        <p>On a(n) ${adj1} night in the grand ${place}, a loud ${sound} revealed Lord ${silName} lying beside a ${obj}, muttering, "It was the ${noun}!"
+        <p>On a(n) ${adj} night in the grand ${place}, a loud ${sound} revealed Lord ${silName} lying beside a ${obj}, muttering, "It was the ${noun}!"
         Detective ${name}, questioned the ${jobTitle}, who was caught ${verb} near the scene. But the truth was stranger than fiction.
         It turns out Lord ${silName} had slipped on ${sub} while trying to steal a plate of ${food}.
         Everyone laughed, and the detective vowed to investigate only serious cases from now on.</p>
@@ -55,14 +55,14 @@ function mystery()
 
 function travel()
 {
-    const histFig = prompt("A historical figure");
-    const place = prompt("A place in time");
-    const obj = prompt("A object");
-    const pluNoun = prompt("A plural noun");
+    const histFig = prompt("A Historical Figure");
+    const place = prompt("A Place in Time");
+    const obj = prompt("A Object");
+    const pluNoun = prompt("A Plural Noun");
     const adj1 = prompt("Adjective");
     const verb = prompt("Verb");
     const event = prompt("An Event in History");
-    const silName = prompt("A silly name");
+    const silName = prompt("A Silly Name");
     const adj2 = prompt("Adjective");
 
     if (histFig && place && obj && pluNoun && adj1 && verb && event && silName && adj2)
