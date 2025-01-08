@@ -145,7 +145,7 @@ Your Generated Story
 </details>
 
 ### Step 3
-- Lastly, outside of the div tag with class container, create a div tag with an id of output. You can leave it blank for now.
+- Lastly, create a div tag with an id of output. You can leave it blank for now.
 
 <details>
 <summary>Step 3 Solution</summary>
@@ -156,6 +156,9 @@ Your Generated Story
 ```
 
 </details>
+
+> [!NOTE]
+> Everything should be inside the div tag with class `container`!
 
 ## Part II: CSS
 - For now your website will look kind of funky with big images and text not aligning properly.
