@@ -161,23 +161,88 @@ Your Generated Story
 > Everything should be inside the div tag with class `container`!
 
 ## Part II: CSS
-- For now your website will look kind of funky with big images and text not aligning properly.
-- In `style.css` we want the header's (the ``<h1>`` and ``<h2>`` tags) to be in the center of our website (Hint: Use Flexbox!).
-- First off the images are way to big, we need to resize it.
-- Style all images to have the following:
-    - `width` of 100%
-    - `height` set to auto. You can just type `auto`.
-    - `border-radius` to about 25 pixels.
-        - This will round the corners for images.
-    - `margin-bottom` to about 10 pixels. 
-        - This will help space between the images and text.
+For now your website will look kind of funky with big images and text not aligning properly.
 
+### Step 4
+In `style.css` we want the header's (the ``<h1>`` and ``<h2>`` tags) to be in the center of our website (Hint: Use Flexbox!).
+  
+<details>
+<summary> Step 4 Solution </summary>
+
+```css
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+```
+</details>
+
+### Step 5
+Alright the images are way to big, we need to resize it. 
+> [!NOTE]
+> To change the style of all the images you can call the img tag (similar to the h1 and h2 tags). From there you can modify it's size, radius, transparency, etc. Overall this is what it should look like in CSS:
+```css
+img {
+  width: 200px;
+  padding: 10px;
+  opacity: 0.5; /* Image transparency with a image at 50% opacity */
+}
+```
+- Style all images to have the following:
+  - `width` of 100%
+  - `height` set to auto. You can just type `auto`.
+  - `border-radius` to about 25 pixels.
+      - This will round the corners for images.
+  - `margin-bottom` to about 10 pixels. 
+      - This will help space between the images and text.
+
+<details>
+<summary> Step 5 Solution </summary>
+
+```css
+img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 25px; 
+  margin-bottom: 10px; 
+}
+```
+</details>
+
+### Step 6
 - Style all paragraphs ``<p>`` to have the following:
     - `font-size` of 16 pixels.
     - `line-height` of 1.5.
 
+<details>
+<summary> Step 6 Solution </summary>
+
+```css
+p {
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+```
+</details>
+
+### Step 7
 - Style all buttons ``<button>`` to have the following:
     - `padding` of 10 pixels.
+
+<details>
+<summary> Step 6 Solution </summary>
+
+```css
+button {
+    padding: 10px;
+}
+```
+</details>
 
 ### ---- Feel free to change any of the values or add additional styling elements! ----
 
@@ -186,7 +251,9 @@ After all that, your website should look similar to this:
 ![demo](demo.jpg)
 
 ## Part III: JavaScript
-- In the `script.js` you will implement 3 functions that will be added to the onclick event in the `index.html` file.
+In the `script.js` you will implement 3 functions that will be added to the onclick event in the `index.html` file.
+
+### Step 8
 - Create a function named `dinner` with no parameters.
 - Inside the dinner function you will create variables that takes in user input by using the `prompt` method which looks something like this:
 ```js
@@ -203,6 +270,12 @@ We all laughed and said "(ANOTHER FUNNY QUOTE)." It was unforgettable!
 ```js
 const food = prompt("Name a food item");
 ```
+> [!TIP]
+> It is common practice to have "good" variable names related to what the variable is doing. Here is an example:
+```js
+const  = 3.14;
+```
+
 - Next we need to ensure that the user has inputted something in all of the 8 variables. We will use `if` and `else` statements.
 - Here is the format of `if` and `else` statements in JavaScript:
 ```js
